@@ -1,4 +1,7 @@
 language python
 
+install:
+- pip install python-coveralls
+
 script:
--python -m unittest
+- python -m unittest
