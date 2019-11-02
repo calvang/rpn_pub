@@ -1,4 +1,4 @@
-language python
+language: python
 
 install:
 - pip install python-coveralls

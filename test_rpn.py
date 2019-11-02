@@ -18,3 +18,6 @@ class TestBasics(unittest.TestCase):
     def test_power(self):
         result = rpn.calculate("1 2 ^")
         self.assertEqual(1, result);
+
+if __name__ == "__main__":
+    unittest.main()
