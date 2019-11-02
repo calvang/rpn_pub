@@ -5,3 +5,7 @@ install:
 
 script:
 - python -m unittest
+
+after-success:
+- coverage run -m unittest
+- coveralls  

@@ -13,8 +13,6 @@ operators = {
 
 def calculate(myarg):
     stack = list()
-    # TODO more intelligent split
-    arg_list = split_arges(myarg)
     # TODO convert matrix string into np.array
     for token in myarg.split():
         try:
