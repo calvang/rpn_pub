@@ -21,3 +21,8 @@ class TestBasics(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+# TO RUN:
+# python -m unittest
+# OR (with main)
+# python test rpn.py 
