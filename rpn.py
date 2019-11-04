@@ -102,9 +102,9 @@ if __name__ == '__main__':
     power = Button(gui, text=' exp ', fg='black', bg='white',command=lambda: pressOp("^"), height=4, width=6)
     power.grid(row=6, column=3)
 
-    enter = Button(gui, text=' Enter ', fg='black', bg='white',command=lambda: pressEnter(), height=4, width=22)
+    enter = Button(gui, text=' Enter ', fg='black', bg='white',command=lambda: pressEnter(), height=4, width=26)
     enter.grid(row=6, column=0,columnspan=3)
-    clear = Button(gui, text=' Clear ', fg='black', bg='white',command=lambda: clearscreen(), height=4, width=14)
+    clear = Button(gui, text=' Clear ', fg='black', bg='white',command=lambda: clearscreen(), height=4, width=16)
     clear.grid(row=5, column=1,columnspan=2)
     gui.mainloop()
     #main()
