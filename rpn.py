@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 from tkinter import *
 import operator
-import readline
+#import readline
 
 operators = {
     '+': operator.add,
@@ -64,12 +64,12 @@ if __name__ == '__main__':
     gui = Tk()
     gui.configure(background="black")
     gui.title("RPN Calculator")
-    gui.geometry() #do I need values?
+    gui.geometry() #automatic sizing
     equation = StringVar()
     inputField = Entry(gui, textvariable=equation)
     inputField.grid(columnspan=4, ipadx=70)
     equation.set("")
-
+    #input buttons
     button0 = Button(gui, text=' 0 ', fg='black', bg='white',command=lambda: pressNum(0), height=4, width=6)
     button0.grid(row=5, column=0)
     button1 = Button(gui, text=' 1 ', fg='black', bg='white',command=lambda: pressNum(1), height=4, width=6)
@@ -90,7 +90,7 @@ if __name__ == '__main__':
     button8.grid(row=4, column=1)
     button9 = Button(gui, text=' 9 ', fg='black', bg='white',command=lambda: pressNum(9), height=4, width=6)
     button9.grid(row=4, column=2)
-
+    # operator buttons
     add = Button(gui, text=' + ', fg='black', bg='white',command=lambda: pressOp("+"), height=4, width=6)
     add.grid(row=2, column=3)
     subtract = Button(gui, text=' - ', fg='black', bg='white',command=lambda: pressOp("-"), height=4, width=6)
@@ -101,7 +101,7 @@ if __name__ == '__main__':
     divide.grid(row=5, column=3)
     power = Button(gui, text=' exp ', fg='black', bg='white',command=lambda: pressOp("^"), height=4, width=6)
     power.grid(row=6, column=3)
-
+    # other function buttons
     enter = Button(gui, text=' Enter ', fg='black', bg='white',command=lambda: pressEnter(), height=4, width=25)
     enter.grid(row=6, column=0,columnspan=3)
     clear = Button(gui, text=' Clear ', fg='black', bg='white',command=lambda: clearscreen(), height=4, width=16)

@@ -25,4 +25,4 @@ if __name__ == "__main__":
 # TO RUN:
 # python -m unittest
 # OR (with main)
-# python test rpn.py 
+# python test_rpn.py 
